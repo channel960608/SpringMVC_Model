@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="channel.springmvc.bean">
+	<class name="Service" table="service">
+
+		<id name="id" column="id" type="integer">
+			<generator class="native"></generator>
+		</id>
+		<property name="ser_id" type="string" column="ser_id"></property>
+		<property name="name" type="string" column="name"></property>
+		<property name="pay" type="float" column="pay"></property>
+		
+		
+	</class>
+
+
+</hibernate-mapping>

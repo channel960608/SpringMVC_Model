@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="channel.springmvc.bean">
+	<class name="Record" table="record">
+		<id name="id" type="integer" column="id">
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="pro_id" type="string" column="pro_id"></property>
+		<property name="user_id" type="string" column="user_id"></property>
+		<property name="ser_id" type="string" column="ser_id"></property>
+		<property name="comment" type="string" column="comment"></property>
+		<property name="pay" type="float" column="pay"></property>
+		<property name="time_input" type="timestamp" column="time_input"></property>
+		<property name="time" type="timestamp" column="time"></property>
+		
+		
+		
+	</class>
+</hibernate-mapping>

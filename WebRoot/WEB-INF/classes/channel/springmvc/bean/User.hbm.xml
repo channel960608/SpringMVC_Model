@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="channel.springmvc.bean">
+	<class name="User" table="user">
+
+		<id name="id" column="id" type="integer">
+			<generator class="native"></generator>
+		</id>
+		<property name="user_id" type="string" column="user_id"></property>
+		<property name="passwd" type="string" column="passwd"></property>
+		<property name="type" type="int" column="type"></property>
+		<property name="name" type="string" column="name"></property>
+		<property name="mail" type="string" column="mail"></property>
+		<property name="street" type="string" column="street"></property>
+		<property name="country" type="string" column="country"></property>
+		<property name="city" type="string" column="city"></property>
+		<property name="balance" type="float" column="balance"></property>
+		
+		
+	</class>
+
+
+</hibernate-mapping>
